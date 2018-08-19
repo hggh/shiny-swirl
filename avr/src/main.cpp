@@ -3,7 +3,7 @@
 #include "FastLED.h"
 
 #define WS2812_PIN 6
-#define NUM_LEDS 10
+#define NUM_LEDS 30
 CRGB leds[NUM_LEDS];
 
 void setup() {
@@ -17,8 +17,8 @@ void setup() {
 }
 
 void loop() {
-	CRGB color(255, 0, 0);
+	CRGB color(0, 0, 255);
 	fill_solid(leds, NUM_LEDS, color);
-	FastLED.setBrightness(80);
+	FastLED.setBrightness(150);
 	FastLED.show();
 }
