@@ -3,8 +3,9 @@
 #include "FastLED.h"
 
 #define WS2812_PIN 6
-#define NUM_LEDS 30
+#define NUM_LEDS 31
 CRGB leds[NUM_LEDS];
+volatile uint8_t hue = 0;
 
 void setup() {
 	// disable ADC
@@ -14,11 +15,11 @@ void setup() {
 	power_spi_disable();
 
 	FastLED.addLeds<WS2812B, WS2812_PIN, GRB>(leds, NUM_LEDS);
+	FastLED.setBrightness(150);
 }
 
 void loop() {
-	CRGB color(0, 0, 255);
-	fill_solid(leds, NUM_LEDS, color);
-	FastLED.setBrightness(150);
+	fill_rainbow(leds, NUM_LEDS, hue++, 5);
 	FastLED.show();
+	delay(20);
 }
