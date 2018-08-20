@@ -1,0 +1,158 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P?
+U 1 1 5B7ACF88
+P 9200 2350
+F 0 "P?" H 9200 2550 50  0000 C CNN
+F 1 "WS2812b" V 9300 2350 50  0000 C CNN
+F 2 "" H 9200 2350 50  0000 C CNN
+F 3 "" H 9200 2350 50  0000 C CNN
+	1    9200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B7AD03F
+P 8700 2450
+F 0 "#PWR?" H 8700 2200 50  0001 C CNN
+F 1 "GND" H 8700 2300 50  0000 C CNN
+F 2 "" H 8700 2450 50  0000 C CNN
+F 3 "" H 8700 2450 50  0000 C CNN
+	1    8700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5B7AD055
+P 8700 2250
+F 0 "#PWR?" H 8700 2100 50  0001 C CNN
+F 1 "+5V" H 8700 2390 50  0000 C CNN
+F 2 "" H 8700 2250 50  0000 C CNN
+F 3 "" H 8700 2250 50  0000 C CNN
+	1    8700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2250 8700 2250
+Wire Wire Line
+	9000 2450 8700 2450
+$Comp
+L +5V #PWR?
+U 1 1 5B7AD164
+P 8500 3100
+F 0 "#PWR?" H 8500 2950 50  0001 C CNN
+F 1 "+5V" H 8500 3240 50  0000 C CNN
+F 2 "" H 8500 3100 50  0000 C CNN
+F 3 "" H 8500 3100 50  0000 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B7AD175
+P 8500 3350
+F 0 "R?" V 8580 3350 50  0000 C CNN
+F 1 "220" V 8500 3350 50  0000 C CNN
+F 2 "" V 8430 3350 50  0000 C CNN
+F 3 "" H 8500 3350 50  0000 C CNN
+	1    8500 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 5B7AD279
+P 8650 4700
+F 0 "P?" H 8650 4950 50  0000 C CNN
+F 1 "IS471" V 8750 4700 50  0000 C CNN
+F 2 "" H 8650 4700 50  0000 C CNN
+F 3 "" H 8650 4700 50  0000 C CNN
+	1    8650 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 5B7AD2E3
+P 8500 3800
+F 0 "D?" H 8500 3900 50  0000 C CNN
+F 1 "LED" H 8500 3700 50  0000 C CNN
+F 2 "" H 8500 3800 50  0000 C CNN
+F 3 "" H 8500 3800 50  0000 C CNN
+	1    8500 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 3950 8500 4500
+Wire Wire Line
+	8500 3650 8500 3500
+Wire Wire Line
+	8500 3200 8500 3100
+$Comp
+L +5V #PWR?
+U 1 1 5B7AD448
+P 8800 4350
+F 0 "#PWR?" H 8800 4200 50  0001 C CNN
+F 1 "+5V" H 8800 4490 50  0000 C CNN
+F 2 "" H 8800 4350 50  0000 C CNN
+F 3 "" H 8800 4350 50  0000 C CNN
+	1    8800 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4350 8800 4500
+$Comp
+L GND #PWR?
+U 1 1 5B7AD46A
+P 8600 4250
+F 0 "#PWR?" H 8600 4000 50  0001 C CNN
+F 1 "GND" H 8600 4100 50  0000 C CNN
+F 2 "" H 8600 4250 50  0000 C CNN
+F 3 "" H 8600 4250 50  0000 C CNN
+	1    8600 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 4250 8600 4500
+$EndSCHEMATC
