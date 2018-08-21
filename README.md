@@ -13,3 +13,4 @@ shiny swirl for debian booth
  * 220 Ohm resistor
  * IS471
  * Arduino Uno / MiniPro
+ * 5V 2A power supply
