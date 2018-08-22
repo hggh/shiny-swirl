@@ -10,9 +10,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="297mm"
+   height="420mm"
+   viewBox="0 0 297 420"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="162.23922"
-     inkscape:cy="311.45975"
+     inkscape:zoom="0.35"
+     inkscape:cx="-188.55445"
+     inkscape:cy="629.36279"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,18 +57,19 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,123)">
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.37291172;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4733"
        width="230"
        height="230"
-       x="11.079886"
-       y="10.319317" />
+       x="27.710838"
+       y="-46.37711" />
     <g
        style="overflow:visible"
        id="g5094"
-       transform="matrix(1.7354353,0,0,1.7354353,50.622384,31.216204)">
+       transform="matrix(1.7354353,0,0,1.7354353,67.253336,-25.480224)">
       <g
          i:rgbTrio="#4F008000FFFF"
          i:dimmedPercent="50"
