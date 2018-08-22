@@ -54,7 +54,6 @@ void setup() {
 	power_twi_disable();
 	power_usart0_disable();
 
-	randomSeed(analogRead(0));
 	pinMode(PIN_MOTION, INPUT);
 
 	attachInterrupt(digitalPinToInterrupt(PIN_MOTION), int_handler, FALLING);
