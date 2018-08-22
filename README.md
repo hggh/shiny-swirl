@@ -2,6 +2,7 @@
 
 shiny swirl for debian booth
 
+![swril red](https://raw.githubusercontent.com/hggh/shiny-swirl/master/pics/swirl-red.jpg)
 
 ## parts
 
