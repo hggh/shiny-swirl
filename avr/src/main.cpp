@@ -7,6 +7,7 @@
 #define NUM_LEDS 31
 
 CRGB leds[NUM_LEDS];
+volatile uint8_t led_mode = 1;
 volatile uint8_t hue = 0;
 volatile uint8_t update_leds = 0;
 static uint8_t led_brightness = 150;
@@ -17,6 +18,16 @@ ISR(TIMER1_COMPA_vect) {
 }
 
 void int_handler() {
+	led_mode = 2;
+}
+
+void stop_timer1() {
+	noInterrupts();
+	TCCR1A = 0;
+	TCCR1B = 0;
+	TCNT1 = 0;
+
+	interrupts();
 }
 
 // ~ 22ms
@@ -58,5 +69,28 @@ void loop() {
 	if (update_leds == 1) {
 		update_leds = 0;
 		FastLED.show();
+	}
+	if (led_mode == 2) {
+		stop_timer1();
+		noInterrupts();
+
+		fill_solid(leds, NUM_LEDS, CRGB::Blue);
+		FastLED.show();
+		delay(700);
+
+		fill_solid(leds, NUM_LEDS, CRGB::Red);
+		FastLED.show();
+		delay(600);
+
+		fill_solid(leds, NUM_LEDS, CRGB::Blue);
+		FastLED.show();
+		delay(700);
+
+		fill_rainbow(leds, NUM_LEDS, hue++, 5);
+		FastLED.show();
+		interrupts();
+		setup_timer1();
+
+		led_mode = 1;
 	}
 }
