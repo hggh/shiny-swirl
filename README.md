@@ -12,7 +12,7 @@ shiny swirl for debian booth
  * 31x WS2812b LEDs
  * IR LED  940nm
  * 220 Ohm resistor
- * IS471
+ * [IS471](https://www.conrad.de/de/ir-detektor-sonderform-axial-bedrahtet-940-nm-sharp-is-471-fe-sh-185094.html)
  * Arduino Uno / MiniPro
  * [5.5/2.1mm connector](https://www.conrad.de/de/niedervolt-steckverbinder-buchse-einbau-vertikal-55-mm-21-mm-1-st-1564886.html)
  * [5V 2A power supply](https://www.conrad.de/de/voltcraft-fpps-5-10w-steckernetzteil-festspannung-5-vdc-2100-ma-105-w-512782.html)
